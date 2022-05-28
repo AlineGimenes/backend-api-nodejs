@@ -9,5 +9,8 @@ module.exports = function(server) {
         res.send('BACKEND is runner.')
     );
 
+    const register = require('../api/registerService');
+    register.register(protectedApi, 'register');
+
     server.use(express.static(require("path").join(__dirname, "../public")))
 }
