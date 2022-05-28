@@ -13,7 +13,7 @@ server.use(allowCors);
 server.use(express.static('public'));
 
 server.listen(port, function(){
-    console.log('BACKEND is runner on port ${port}.')
+    console.log(`BACKEND is runner on port ${port}.`)
 })
 
 module.exports = server
